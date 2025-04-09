@@ -2,7 +2,11 @@
 
 The approach used here is the Scientific Machine Learning approach - an emerging field that combines the interpretability of mechanistic models with the predictive power of ML models.
 
-In this project we'll see how Scientific ML can be used to predict the spread of infectious diseases such as COVID-19 by combining epidemiological models with the power of machine learning. Specifically, we'll focus on the SIR model, one of the simplest yet foundational models in epidemiology. It classifies population into three compartments: Susceptible (S), Infected (I), and Recovered (R). Initially, the population is largely susceptible, with only a small number of individuals infected. As the virus transmits through the population, susceptible individuals become infected. Over time, infected individuals recover and acquire immunity, reducing the number of those at risk.
+In this project we'll see how Scientific ML can be used to predict the spread of infectious diseases such as COVID-19 by combining epidemiological models with the power of machine learning. 
+
+<img src="./assets/image.png">
+
+Specifically, we'll focus on the SIR model, one of the simplest yet foundational models in epidemiology. It classifies population into three compartments: Susceptible (S), Infected (I), and Recovered (R). Initially, the population is largely susceptible, with only a small number of individuals infected. As the virus transmits through the population, susceptible individuals become infected. Over time, infected individuals recover and acquire immunity, reducing the number of those at risk.
 
 This transition is represented by a system of three ordinary differential equations, each describing the rate of change for the Susceptible (S), Infected (I), and Recovered (R) populations. The model incorporates parameters such as τ_SI, which denotes the rate at which susceptible individuals become infected, and τ_IR, representing the rate at which infected individuals recover.
 
