@@ -59,7 +59,7 @@ The UDE is trained by comparing the predicted trajectories of S(t), I(t), and R(
 
 This hybrid approach blends the interpretability and structure of the classical SIR model with the flexibility of machine learning. It allows the model to capture complex, nonlinear, and time-varying behaviors of real-world epidemics, making it more robust for forecasting scenarios where full scientific knowledge is incomplete or where parameters vary across populations and time.
 
-### Documentation in-progress
+##### Documentation in-progress
 
 ### credits
 SIR Model image - ResearchGate
