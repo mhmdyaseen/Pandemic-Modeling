@@ -21,7 +21,7 @@ To incoporate real-world scenarios such as quarantine, we need to subtract a ter
 $$
 u' = [S, I, R, T]' = f(u, p, t) + NN(p)
 $$
-<img src="./assets/QSIR-with-NN.png" style="width:300px">
+<img src="./assets/QSIR-with-NN.png" style="width:300px;">
 
 ### Machine Learning to make predictions
 We can utilize neural networks to learn a mapping from initial conditions—such as S(t=0), I(t=0), and R(t=0) to the number of infections observed at the end of a given time period, such as one month. However, traditional machine learning models often act as black boxes, offering little interpretability and ignoring established scientific structure.
