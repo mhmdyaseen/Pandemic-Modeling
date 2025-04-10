@@ -40,20 +40,6 @@ In the Universal Differential Equation (UDE) framework, traditional scientific m
 
 Instead of assuming fixed values for the interaction parameters, UDEs use neural networks to estimate these values based on input features such as the current susceptible and infected populations. The outputs are then incorporated into the differential equations, which are solved using numerical integration methods (e.g Euler’s method or Runge-Kutta) to simulate system evolution over time.
 
-#### **Neural Networks in the QSIR UDE**
-
-Two neural networks—**NN1** and **NN2**—are introduced to model the unknown interaction parameters:
-
-- **NN1 (for τ_SI)**  
-  - **Inputs**: Susceptible population S(t) and infected population I(t) at time t
-  - **Output**: Estimated infection rate τ_SI, used in the equations for $$\\frac{dS}{dt}\$$ and $$\\frac{dI}{dt}\$$
-
-- **NN2 (for τ_IR)**  
-  - **Input**: Infected population I(t) at time t
-  - **Output**: Estimated recovery rate τ_IR, used in the equations for $$\\frac{dI}{dt}\$$ and $$\\frac{dR}{dt}\$$
-
-These neural networks serve as functional approximators, learning to predict the interaction rates based on real-time inputs. To ensure meaningful results, inputs are typically normalized, and outputs are constrained to be positive, reflecting the non-negative nature of infection and recovery rates.
-
 #### **Training the UDE**
 
 The UDE is trained by comparing the predicted trajectories of S(t), I(t), and R(t) with observed real-world data using loss functions such as Mean Squared Error (MSE). Through backpropagation, the neural networks adjust their parameters to minimize this error.
