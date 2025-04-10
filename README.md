@@ -17,9 +17,10 @@ This is where machine learning becomes particularly useful. By leveraging large-
 
 ## QSIR Model (Quarantine SIR Model)
 To incoporate real-world scenarios such as quarantine, we need to subtract a term from the infected population. But we don't know the form that the term will look, so we replace that term with the neural network. And to compute gradients, we'll be using adjoint sensitivity method. 
-$$\[
+
+$$
 u' = [S, I, R, T]' = f(u, p, t) + NN(p)
-\]$$
+$$
 
 <img src="./assets/QSIR-with-NN.png">
 
