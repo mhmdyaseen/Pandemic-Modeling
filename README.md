@@ -21,6 +21,7 @@ To incoporate real-world scenarios such as quarantine, we need to subtract a ter
 $$
 u' = [S, I, R, T]' = f(u, p, t) + NN(p)
 $$
+
 <img src="./assets/QSIR-with-NN.png" style="width: 400px;">
 
 ### Machine Learning to make predictions
